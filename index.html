@@ -10,7 +10,6 @@
         rel="stylesheet">
 
     <style>
-
         * {
             margin: 0;
             padding: 0;
@@ -40,8 +39,6 @@
             background: #5d7f95;
             margin: 0 auto 35px;
             border-radius: 2px;
-            animation: expandLine 1s ease forwards;
-            transform-origin: center;
         }
 
         h1 {
@@ -49,8 +46,6 @@
             font-weight: 300;
             letter-spacing: 2px;
             color: #2f3b4a;
-            animation: fadeInName 1.2s ease forwards;
-            opacity: 0;
         }
 
         h2 {
@@ -79,10 +74,6 @@
             justify-content: center;
             gap: 18px;
             flex-wrap: wrap;
-
-            animation: riseButtons 1.2s ease forwards;
-            animation-delay: 0.4s;
-            opacity: 0;
         }
 
         .button {
@@ -101,6 +92,23 @@
             transform: translateY(-2px);
         }
 
+        .info {
+            margin-top: 45px;
+            color: #7c8894;
+            font-size: 16px;
+            line-height: 2;
+        }
+
+        .info a {
+            color: #5d7f95;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .info a:hover {
+            text-decoration: underline;
+        }
+
         footer {
             margin-top: 55px;
             color: #b0b8bf;
@@ -108,54 +116,7 @@
             letter-spacing: 1px;
         }
 
-
-        /* ANIMAZIONI APERTURA PAGINA */
-
-        @keyframes expandLine {
-
-            from {
-                width: 0;
-            }
-
-            to {
-                width: 80px;
-            }
-
-        }
-
-
-        @keyframes fadeInName {
-
-            from {
-                opacity: 0;
-                transform: translateY(15px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-
-        }
-
-
-        @keyframes riseButtons {
-
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-
-        }
-
-
         @media (max-width:600px) {
-
             h1 {
                 font-size: 42px;
             }
@@ -167,13 +128,10 @@
             .tagline {
                 font-size: 16px;
             }
-
         }
-
     </style>
 
 </head>
-
 
 <body>
 
@@ -189,24 +147,21 @@
             I like planning great events... and staying long enough to enjoy them.
         </p>
 
-
         <div class="buttons">
-
-            <a class="button" href="cv.pdf" download>
-                Download CV
-            </a>
-
-            <a class="button" href="https://www.linkedin.com/in/greta-pasqualato/" target="_blank">
-                LinkedIn
-            </a>
-
+            <a class="button" href="cv.pdf" download>Download CV</a>
         </div>
 
+        <div class="info">
+            📍 Monza, Italy<br><br>
+
+            <a href="https://www.linkedin.com/in/greta-pasqualato/" target="_blank">
+                LinkedIn
+            </a>
+        </div>
 
         <footer>
             © Greta Pasqualato
         </footer>
-
 
     </div>
 
