@@ -1,3 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greta Pasqualato</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #ffffff;
+            color: #2f3b4a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 720px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .line {
+            width: 80px;
+            height: 3px;
+            background: #5d7f95;
+            margin: 0 auto 35px;
+            border-radius: 2px;
+            animation: expandLine 1s ease forwards;
+            transform-origin: center;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: #2f3b4a;
+            animation: fadeInName 1.2s ease forwards;
+            opacity: 0;
+        }
+
+        h2 {
+            margin-top: 12px;
+            font-size: 22px;
+            font-weight: 500;
+            color: #5d7f95;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .tagline {
+            margin-top: 28px;
+            color: #6f7f8d;
+            font-size: 18px;
+            font-style: italic;
+            line-height: 1.7;
+            max-width: 560px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .buttons {
+            margin-top: 55px;
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            flex-wrap: wrap;
+
+            animation: riseButtons 1.2s ease forwards;
+            animation-delay: 0.4s;
+            opacity: 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 34px;
+            background: #5d7f95;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: .25s ease;
+            font-weight: 500;
+        }
+
+        .button:hover {
+            background: #445f72;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            margin-top: 55px;
+            color: #b0b8bf;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+
+        /* ANIMAZIONI APERTURA PAGINA */
+
+        @keyframes expandLine {
+
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 80px;
+            }
+
+        }
+
+
+        @keyframes fadeInName {
+
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
+
+        @keyframes riseButtons {
+
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
+
+        @media (max-width:600px) {
+
+            h1 {
+                font-size: 42px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            .tagline {
+                font-size: 16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
 <body>
 
     <div class="container">
@@ -12,18 +189,27 @@
             I like planning great events... and staying long enough to enjoy them.
         </p>
 
+
         <div class="buttons">
-            <a class="button" href="cv.pdf" download>Download CV</a>
+
+            <a class="button" href="cv.pdf" download>
+                Download CV
+            </a>
 
             <a class="button" href="https://www.linkedin.com/in/greta-pasqualato/" target="_blank">
                 LinkedIn
             </a>
+
         </div>
+
 
         <footer>
             © Greta Pasqualato
         </footer>
 
+
     </div>
 
 </body>
+
+</html>
