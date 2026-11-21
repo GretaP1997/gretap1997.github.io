@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,20 +69,11 @@
             text-transform: uppercase;
         }
 
-        .tagline {
-            margin: 35px auto;
-            max-width: 650px;
-            color: #6f7f8d;
-            font-size: 22px;
-            font-style: italic;
-            line-height: 1.6;
-        }
-
         .line-bottom {
             width: 90px;
             height: 3px;
             background: #5d7f95;
-            margin: 0 auto 45px;
+            margin: 35px auto 45px;
             border-radius: 3px;
         }
 
@@ -123,6 +115,44 @@
             letter-spacing: 1px;
         }
 
+        /* Pulsante fisso: sito viaggi */
+
+        .travel-button {
+            position: fixed;
+            right: 24px;
+            bottom: 24px;
+            z-index: 1000;
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            background: #5d7f95;
+            color: white;
+            text-decoration: none;
+            padding: 14px 21px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: .3px;
+            box-shadow: 0 4px 14px rgba(47, 59, 74, .18);
+            transition: all .25s ease;
+        }
+
+        .travel-button:hover {
+            background: #415d72;
+            transform: translateY(-3px);
+            box-shadow: 0 7px 18px rgba(47, 59, 74, .23);
+        }
+
+        .travel-button:focus-visible {
+            outline: 3px solid #2f3b4a;
+            outline-offset: 4px;
+        }
+
+        .travel-arrow {
+            font-size: 16px;
+            line-height: 1;
+        }
+
         @media (max-width: 768px) {
             .photo {
                 width: 150px;
@@ -138,10 +168,6 @@
                 letter-spacing: 3px;
             }
 
-            .tagline {
-                font-size: 18px;
-            }
-
             .buttons {
                 flex-direction: column;
                 align-items: center;
@@ -150,6 +176,13 @@
             .button {
                 width: 220px;
             }
+
+            .travel-button {
+                right: 14px;
+                bottom: 14px;
+                padding: 12px 16px;
+                font-size: 11px;
+            }
         }
     </style>
 
@@ -157,7 +190,7 @@
 
 <body>
 
-    <div class="container">
+    <main class="container">
 
         <img src="profile.JPG" alt="Greta Pasqualato" class="photo">
 
@@ -166,10 +199,6 @@
         <h1>Greta Pasqualato</h1>
 
         <h2>Event Project Manager</h2>
-
-        <p class="tagline">
-            I like planning great events... and staying long enough to enjoy them.
-        </p>
 
         <div class="line-bottom"></div>
 
@@ -202,16 +231,20 @@
             © Greta Pasqualato
         </footer>
 
-    </div>
+    </main>
 
-</body>
+    <!-- Collegamento al sito viaggi -->
 
-</html>
-
-
-</body>
-
-</html>
+    <a
+        class="travel-button"
+        href="https://gretagoesaround.github.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Quando non lavoro: visita il mio sito di viaggi"
+    >
+        Quando non lavoro
+        <span class="travel-arrow">↗</span>
+    </a>
 
 </body>
 
